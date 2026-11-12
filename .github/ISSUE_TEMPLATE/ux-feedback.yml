@@ -1,0 +1,31 @@
+name: UX feedback or interface bug
+description: Help improve the Psync interface without sharing private content.
+body:
+  - type: markdown
+    attributes:
+      value: "Please use fictional answers. Do not include license keys, journal exports, personal health information or complete exercise instructions."
+  - type: dropdown
+    id: version
+    attributes:
+      label: Which version did you test?
+      options:
+        - Contributor demo
+        - Psync app
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What was difficult or unexpected?
+      description: Describe the interface problem and steps to reproduce it.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What would make this easier?
+  - type: input
+    id: browser
+    attributes:
+      label: Device and browser
+      placeholder: e.g. iPhone, Safari; or Windows, Chrome
